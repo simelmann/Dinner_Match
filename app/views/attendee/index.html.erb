@@ -1,0 +1,24 @@
+<h2>attendee List</h2>
+
+<br />
+<%= link_to "New attndee", new_attendee_path %>
+<hr />
+
+<table border="0">
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Location</th>
+  <th>Date</th>
+  <th>Time</th>
+  <th>Event_Pref</th>
+  <th>Food_Pref</th>
+
+<% @attendee.each do |single_attendee| %>
+  <tr>
+
+     -->
+     <td><%= link_to single_attendee.first_name, attendee_path(single_attendee)%></td>
+     <td><%= single_attendee.last_name %></td>
+  </tr>
+<% end %>
+</table>

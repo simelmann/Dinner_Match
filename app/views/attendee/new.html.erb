@@ -1,0 +1,30 @@
+<h2>Adding attendee</h2>
+
+<%= form_for @attendee do |f| %>
+  <label for="">First Name</label>
+  <%= f.text_field :first_name %>
+  <br />
+  <label for="">Last Name</label>
+  <%= f.text_field :last_name %>
+  <br />
+  <label for="">Email</label>
+  <%= f.text_field :email %>
+  <br />
+  <label for="">Location</label>
+  <%= f.text_field :location %>
+  <br />
+  <label for="">Date</label>
+  <%= f.text_field :date %>
+  <br />
+  <label for="">Time</label>
+  <%= f.text_field :time %>
+  <br />
+  <label for="">Event Preference</label>
+  <%= f.text_field :event_pref %>
+  <br />
+  <label for="">Food Preference</label>
+  <%= f.text_field :food_pref %>
+  <br />
+
+  <%= f.submit "send" %>
+<% end %>
